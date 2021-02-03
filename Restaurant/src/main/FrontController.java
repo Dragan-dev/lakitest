@@ -1,6 +1,5 @@
 package main;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.request;
 
 import java.util.List;
 
@@ -15,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.mysql.cj.xdevapi.DocFilterParams;
+
 
 import main.DAO.CategoryDAO;
 import main.DAO.ChefDAO;
