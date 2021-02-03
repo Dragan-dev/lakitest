@@ -66,6 +66,7 @@ public class AdminController {
 
 	@RequestMapping("delete-reservation")
 	public String deleteReservation(@RequestParam int id) {
+		// This deletes a reservation based on the provided ID
 		reservationDAO.deleteReservation(id);
 		return "redirect:/administration/reservation-list";
 	}
