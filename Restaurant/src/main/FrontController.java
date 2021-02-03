@@ -34,7 +34,7 @@ import main.entity.Reservation;
 @RequestMapping("/")
 public class FrontController {
 
-	@Autowired		
+	@Autowired
 	private ReservationDAO reservationDAO;
 	@Autowired
 	private FoodDAO foodDAO;
@@ -53,18 +53,18 @@ public class FrontController {
 		List<Food> foodList1=foodDAO.getFoodByCategory(1);
 		List<Food> foodList2=foodDAO.getFoodByCategory(2);
 		List<Food> foodList3=foodDAO.getFoodByCategory(3);
-		
+
 		List<Food> foodOnIndex=foodDAO.getFoodsOnIndexPage();
 		List<Chef> chefList=chefDAO.getChefList();
 		List<Category> categoryList=categoryDAO.getCategoryList();
 		List<Events> eventsList=eventsDAO.getEventsList();
-		
+
 		model.addAttribute("foodList1", foodList1);
 		model.addAttribute("foodList2", foodList2);
 		model.addAttribute("foodList3", foodList3);
-		
-		
-		
+
+
+
 		model.addAttribute("eventsList", eventsList);
 		model.addAttribute("categoryList", categoryList);
 		model.addAttribute("chefList",chefList);
